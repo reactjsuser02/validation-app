@@ -39,7 +39,7 @@ function changePage(direction) {
 
 function App() {
 
-    const [page, setPage] = useState(2)
+    const [page, setPage] = useState(0)
     const [form, setForm] = useState({
         login: '',
         password: '',
