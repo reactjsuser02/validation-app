@@ -19,7 +19,10 @@ function Step2(props) {
             <option value="monthly">Monthly subscription</option>
             <option value="yearly">Yearly subscription</option>
         </select>
-        <button className="text-white rounded px-3 py-1 bg-purple-500" onClick={handleClick}>Next</button>
+        <div className='buttons block'>
+            <button className="text-white rounded px-3 py-1 mr-4 bg-purple-500" onClick={props.previousPage}>Previous</button>
+            <button className="text-white rounded px-3 py-1 bg-purple-500" onClick={handleClick}>Next</button>  
+        </div>
     </div>
   );
 }

@@ -19,6 +19,7 @@ function DisplayPage(props) {
         return <Step2
         step2Change={props.step2Change}
         step2Submit={props.step2Submit}
+        previousPage={props.previousPage}
         />
     }
     if(props.page == 2) {
@@ -26,6 +27,7 @@ function DisplayPage(props) {
         step3Change={props.step3Change}
         step3Submit={props.step3Submit}
         error={props.error}
+        previousPage={props.previousPage}
         />
     }
 }
@@ -155,6 +157,9 @@ function App() {
             setError(newError)
         }
     }
+    function previousPage() {
+        setPage(page-1)
+    }
 
 
     return (
@@ -169,6 +174,7 @@ function App() {
             step3Change={step3Change}
             step3Submit={step3Submit}
             error={error}
+            previousPage={previousPage}
             />
             {/* <Step1 />
             <Step2 />

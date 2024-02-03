@@ -62,7 +62,7 @@ function Step3(props) {
             ) : null}
         </div>
         <div className='buttons block'>
-            <button className="text-white rounded px-3 py-1 mr-4 bg-purple-500" onClick={props.step3Submit}>Previous</button>
+            <button className="text-white rounded px-3 py-1 mr-4 bg-purple-500" onClick={props.previousPage}>Previous</button>
             <button className="text-white rounded px-3 py-1 bg-purple-500" onClick={props.step3Submit}>Next</button>  
         </div>
     </div>
